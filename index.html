@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inbox Zero Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Inbox Zero Game</h1>
+      <div id="score-container">
+        Score: <span id="score">0</span>
+        <span id="score-badge" class="hidden"></span>
+      </div>
+    </header>
+    <div id="onboarding" class="onboarding">
+      <h2>Welcome to Inbox Zero Game!</h2>
+      <p>Archive emails (+5 pts) or delete them (+3 pts) to earn points. Try to reach Inbox Zero and compete with yourself! Your score is saved in your browser.</p>
+      <button id="dismiss-onboarding">Got it!</button>
+    </div>
+    <main>
+      <div id="inbox-list"></div>
+      <div id="empty-message" class="hidden">🎉 Inbox Zero! No emails left.</div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html> 
